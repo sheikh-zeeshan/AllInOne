@@ -1,0 +1,62 @@
+﻿@model BlogSite.Models.MVVM.PostViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+@{
+    @*<link href="~/lib/Trumbowyg-master/dist/ui/trumbowyg.css" rel="stylesheet" />*@
+    <div>
+            Its Panel edit page
+        <form asp-controller="Panel" asp-action="Edit" method="post" enctype="multipart/form-data">
+            <input asp-for="Id" type="hidden" />
+            <div>
+                Title <input asp-for="Title" />
+            </div>
+            <div>
+                Desc <input asp-for="Description" />
+            </div>
+            <div>
+                Tags <input asp-for="Tags" />
+            </div>
+            <div>
+                Cat  
+                    <select asp-for="Category">
+                        <option value="0">Cat1</option>
+                        <option value="1">Cat2</option>
+                        <option value="2">Cat3</option>
+                    </select>
+            </div>
+
+            <div>
+                Body <textarea id="editor" asp-for="Body"></textarea>
+            </div>
+
+            <div>
+                Image <input asp-for="Image" /> <input asp-for="CurrentImage" type="hidden" />
+            </div>
+
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+}
+
+
+@section Scripts
+{
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+
+    <script src="~/lib/Trumbowyg-master/dist/trumbowyg.js"></script>
+    <script>
+        $('#editor').trumbowyg();
+               // //. class
+               ////# id
+               // //nav html element
+    </script>
+}

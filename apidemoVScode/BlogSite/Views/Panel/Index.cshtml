@@ -1,0 +1,28 @@
+﻿@model List<Post>
+@{
+
+    ViewData["Title"] = "Admin";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Admin Panel</h1>
+</div>
+
+<img src="~/Content/static/chair.jpg" width="20" height="20" />
+<div>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Panel" asp-action="Edit">Create Post</a>
+    <ul>
+        @foreach (var post in Model)
+        {
+            <li>
+                <a asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">@post.Title</a>
+                -
+                <a asp-controller="Panel" asp-action="Edit" asp-route-id="@post.Id">Edit</a>
+                -
+                <a asp-controller="Home" asp-action="Remove" asp-route-id="@post.Id">Delete</a>
+            </li>
+        }
+    </ul>
+</div>
+
+

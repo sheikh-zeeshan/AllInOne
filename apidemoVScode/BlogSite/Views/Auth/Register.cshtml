@@ -1,0 +1,35 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Register</h1>
+
+
+<form asp_controler="Auth" asp-action="Register" method="post">
+    
+    <div>
+        Email
+        <input asp-for="Email" />
+    </div>
+    
+    <div>
+        User Name
+        <input asp-for="UserName" />
+    </div>
+
+    <div>
+        Pwd
+        <input asp-for="Password" type="password" />
+    </div>
+
+    <div>
+        Re-Pwd
+        <input asp-for="Password" type="RePassword" />
+    </div>
+    <input type="submit" value="Sing Up" />
+
+</form>
+
+

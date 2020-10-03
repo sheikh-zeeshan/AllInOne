@@ -1,0 +1,351 @@
+@font-face {
+  font-family: 'ini-icon';
+  src:  url('./ini-icon.eot?slrdqd');
+  src:  url('./ini-icon.eot?slrdqd#iefix') format('embedded-opentype'),
+    url('./ini-icon.ttf?slrdqd') format('truetype'),
+    url('./ini-icon.woff?slrdqd') format('woff'),
+    url('./ini-icon.svg?slrdqd#ini-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ini-"], [class*=" ini-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ini-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ini-bus:before {
+  content: "\e602";
+}
+.ini-feetype:before {
+  content: "\e606";
+}
+.ini-bedassign:before {
+  content: "\e609";
+}
+.ini-bcategory:before {
+  content: "\e960";
+}
+.ini-bed:before {
+  content: "\e961";
+}
+.ini-category:before {
+  content: "\e962";
+}
+.ini-fsubcategory:before {
+  content: "\e963";
+}
+.ini-pos:before {
+  content: "\e964";
+}
+.ini-fcategory:before {
+  content: "\e965";
+}
+.ini-fooditem:before {
+  content: "\e966";
+}
+.ini-room:before {
+  content: "\e967";
+}
+.ini-office-list:before {
+  content: "\e969";
+}
+.ini-account:before {
+  content: "\e900";
+}
+.ini-attendance:before {
+  content: "\e901";
+}
+.ini-eattendance:before {
+  content: "\e903";
+}
+.ini-exam:before {
+  content: "\e904";
+}
+.ini-expense:before {
+  content: "\e905";
+}
+.ini-feetypes:before {
+  content: "\e906";
+}
+.ini-fine:before {
+  content: "\e907";
+}
+.ini-hhostel:before {
+  content: "\e908";
+}
+.ini-hostel:before {
+  content: "\e909";
+}
+.ini-invoice:before {
+  content: "\e90a";
+}
+.ini-issue:before {
+  content: "\e90b";
+}
+.ini-lbooks:before {
+  content: "\e90c";
+}
+.ini-library:before {
+  content: "\e90d";
+}
+.ini-mailandsms:before {
+  content: "\e90e";
+}
+.ini-mailandsmstop:before {
+  content: "\e90f";
+}
+.ini-member:before {
+  content: "\e910";
+}
+.ini-message:before {
+  content: "\e911";
+}
+.ini-payment:before {
+  content: "\e912";
+}
+.ini-paymentsettings:before {
+  content: "\e913";
+}
+.ini-phistory:before {
+  content: "\e914";
+}
+.ini-promotion:before {
+  content: "\e915";
+}
+.ini-routine:before {
+  content: "\e916";
+}
+.ini-sattendance:before {
+  content: "\e917";
+}
+.ini-sbus:before {
+  content: "\e918";
+}
+.ini-setfee:before {
+  content: "\e919";
+}
+.ini-student:before {
+  content: "\e91a";
+}
+.ini-subject:before {
+  content: "\e91b";
+}
+.ini-tattendance:before {
+  content: "\e91c";
+}
+.ini-teacher:before {
+  content: "\e91d";
+}
+.ini-template:before {
+  content: "\e91e";
+}
+.ini-systemadmin:before {
+  content: "\e91f";
+}
+.ini-school:before {
+  content: "\e920";
+}
+.ini-branch:before {
+  content: "\e801";
+}
+.ini-holiday:before {
+  content: "\e921";
+}
+.ini-visitorinfo:before {
+  content: "\e922";
+}
+.ini-resetpassword:before {
+  content: "\e923";
+}
+.ini-syllabus:before {
+  content: "\e924";
+}
+.ini-studentreport:before {
+  content: "\e925";
+}
+.ini-role:before {
+  content: "\e926";
+}
+.ini-permission:before {
+  content: "\e927";
+}
+.ini-notice:before {
+  content: "\e928";
+}
+.ini-markpercentage:before {
+  content: "\e929";
+}
+.ini-mark:before {
+  content: "\e92a";
+}
+.ini-mark2:before {
+  content: "\e92b";
+}
+.ini-classreport:before {
+  content: "\e92c";
+}
+.ini-attendancereport:before {
+  content: "\e92d";
+}
+.ini-assignment:before {
+  content: "\e92e";
+}
+.ini-administrator:before {
+  content: "\e92f";
+}
+.ini-academic:before {
+  content: "\e930";
+}
+.ini-key-new:before {
+  content: "\e931";
+}
+.ini-lock-new:before {
+  content: "\e932";
+}
+.ini-productsale:before {
+  content: "\e933";
+}
+.ini-productpurchase:before {
+  content: "\e934";
+}
+.ini-maininventory:before {
+  content: "\e935";
+}
+.ini-attendanceoverviewreport:before {
+  content: "\e936";
+}
+.ini-onlineexamreport:before {
+  content: "\e937";
+}
+.ini-progresscardreport:before {
+  content: "\e938";
+}
+.ini-studentfinereport:before {
+  content: "\e939";
+}
+.ini-idcardreport:before {
+  content: "\e93a";
+}
+.ini-marksheetreport:before {
+  content: "\e93b";
+}
+.ini-meritstagereport:before {
+  content: "\e93c";
+}
+.ini-terminalreport:before {
+  content: "\e93d";
+}
+.ini-tabulationsheetreport:before {
+  content: "\e93e";
+}
+.ini-admitcardreport:before {
+  content: "\e93f";
+}
+.ini-sociallink:before {
+  content: "\e940";
+}
+.ini-transactionreport:before {
+  content: "\e941";
+}
+.ini-duefeesreport:before {
+  content: "\e942";
+}
+.ini-feesreport:before {
+  content: "\e943";
+}
+.ini-balancefeesreport:before {
+  content: "\e944";
+}
+.ini-examschedulereport:before {
+  content: "\e945";
+}
+.ini-routinereport:before {
+  content: "\e946";
+}
+.ini-income:before {
+  content: "\e947";
+}
+.ini-ebook:before {
+  content: "\e948";
+}
+.ini-librarycardreport:before {
+  content: "\e949";
+}
+.ini-leaveapplicationreport:before {
+  content: "\e94a";
+}
+.ini-librarybooksreport:before {
+  content: "\e94b";
+}
+.ini-librarybookissuereport:before {
+  content: "\e94c";
+}
+.ini-onlineexamquestionreport:before {
+  content: "\e94d";
+}
+.ini-productsalereport:before {
+  content: "\e94e";
+}
+.ini-productpurchasereport:before {
+  content: "\e94f";
+}
+.ini-searchpaymentfees:before {
+  content: "\e950";
+}
+.ini-salaryreport:before {
+  content: "\e951";
+}
+.ini-fmenu:before {
+  content: "\e952";
+}
+.ini-leavecategory:before {
+  content: "\e953";
+}
+.ini-leaveassign:before {
+  content: "\e954";
+}
+.ini-leaveapplication:before {
+  content: "\e955";
+}
+.ini-leaveapply:before {
+  content: "\e956";
+}
+.ini-mainleaveapplication:before {
+  content: "\e957";
+}
+.ini-productcategory:before {
+  content: "\e958";
+}
+.ini-productsupplier:before {
+  content: "\e959";
+}
+.ini-productwarehouse:before {
+  content: "\e95a";
+}
+.ini-product:before {
+  content: "\e95b";
+}
+.ini-emailsetting:before {
+  content: "\e95c";
+}
+.ini-onlineadmission:before {
+  content: "\e95d";
+}
+.ini-accountledgerreport:before {
+  content: "\e95e";
+}
+.ini-onlineadmissionreport:before {
+  content: "\e95f";
+}

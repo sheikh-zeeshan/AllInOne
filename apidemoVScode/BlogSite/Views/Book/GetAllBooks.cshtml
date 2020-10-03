@@ -1,0 +1,44 @@
+﻿@model IEnumerable<BlogSite.Models.Book>
+
+@{
+    ViewData["Title"] = "GetAllBooks";
+    Layout = "~/Views/Shared/_homepgLayout.cshtml";
+}
+
+<h1>GetAllBooks</h1>
+
+<p>
+    <a asp-action="AddNewBook">Create New</a>
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3">
+            <div class="card mb-4 shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="" />
+                <div class="card-body">
+                    <h3 class="card-title">@item.Title</h3>
+                    <p class="card-text"> @item.LongDescp</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            @*<a href="/book/getbook/@item.Id" asp-fragment="similarBooks" class="btn btn-sm btn-outline-secondary">View Details</a>*@
+
+                            <a class="btn btn-sm btn-outline-secondary" 
+                               asp-controller="Book" 
+                               asp-action="getbook" 
+                               asp-route-id="@item.Id" 
+                               asp-fragment="similarBooks">View Details</a>
+                        </div>
+                        <small class="text-muted">@item.AuthName</small>
+                    </div>
+                    <div class="d-flex  align-items-md-start">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

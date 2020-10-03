@@ -1,0 +1,51 @@
+﻿@model Post
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+
+    ViewBag.Title = Model.Title;
+    ViewBag.Description = Model.Description;
+    ViewBag.Keywords = Model.Tags;
+}
+<h1>Post</h1>
+
+
+@if (!string.IsNullOrEmpty(Model.Image))
+{
+    var image_path = $"/Image/{Model.Image}";
+    <img src="@image_path" />
+}
+
+<div>
+    @Model.Title
+    <br />
+    <hr />
+
+    @Html.Raw(Model.Body)
+    
+    
+<div>
+    if (@User.Identity.IsAuthenticated)
+    {
+            @{
+                await Html.RenderPartialAsync("_MainComment", new CommentViewModel { PostId = Model.Id, MainCommentId = 0 });
+            }
+            @foreach (var _c in Model.MainComments)
+            {
+                <p>
+                    @_c.Message ..... @_c.Created
+                </p>
+            }
+    }
+    else{
+    sign in 
+    }
+</div>
+    
+    <footer>
+        @Model.Created
+    </footer>
+</div>

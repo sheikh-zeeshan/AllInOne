@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <link rel="SHORTCUT ICON" href="~/assets/site.png" />
+
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/fonts/ini-icon.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/datatables/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/inilabs/style.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/datepicker/datepicker.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/timepicker/timepicker.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/inilabs/hidetable.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/inilabs/inilabs.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/inilabs/responsive.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/editor/jquery-te-1.4.0.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/toastr/toastr.min.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/inilabs/rid.css">
+
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/select2/css/select2.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/select2/css/select2-bootstrap.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/jqueryUI/jqueryui.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/touchspin/dist/jquery.bootstrap-touchspin.min.css">
+
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/inilabs/jquery.js"></script>
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/datepicker/datepicker.js"></script>
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/timepicker/timepicker.js"></script>
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/toastr/toastr.min.js"></script>
+
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/fullcalendar/lib/cupertino/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://demo.inilabs.net/ihostel/v2.0/assets/fullcalendar/fullcalendar.css">
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/highcharts/highcharts-more.js"></script>
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/highcharts/data.js"></script>
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/highcharts/drilldown.js"></script>
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/highcharts/exporting.js"></script>
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/fullcalendar/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/fullcalendar/lib/moment.min.js"></script>
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/fullcalendar/fullcalendar.min.js"></script>
+</head>
+
+<body class="skin-blue">
+    <header class="header">
+        <a href="https://demo.inilabs.net/ihostel/v2.0/dashboard/index" class="logo">
+                Mirpur            </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown school-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img class="school-img" src="https://demo.inilabs.net/ihostel/v2.0/uploads/images/site.png" />
+                            <span class="label label-success">1</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 1 Branch</li>
+                            <li>
+                                <ul class="menu">
+                                    <li class="school" id="1">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/branch/activebranchnow/1">
+                                            <div class="pull-left"><img class="img-circle" src="https://demo.inilabs.net/ihostel/v2.0/uploads/images/site.png" /></div>
+                                            <h4>Mirpur <i class='glyphicon glyphicon-ok'></i></h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class='footer'>
+                                <a href="https://demo.inilabs.net/ihostel/v2.0/branch/allbranchnow">
+                                        See All Branch                                    </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Message: style can be found in dropdown.less-->
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class='label label-danger'><lable class='alert-image'>3</lable></span> </a>
+                        <ul class='dropdown-menu'>
+                            <li class='header'>You have 3 notifications</li>
+                            <li>
+                                <ul class='menu'>
+                                    <li>
+                                        <a href=https://demo.inilabs.net/ihostel/v2.0/notice/view/4>
+                                            <div class='pull-left'><img class='img-circle' src='https://demo.inilabs.net/ihostel/v2.0/uploads/images/site.png'></div>
+                                            <h4>U.S. Embassy Dha..<small><i class='fa fa-clock-o'></i> 7 months</small></h4>
+                                            <p>The U.S. Emb..</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=https://demo.inilabs.net/ihostel/v2.0/notice/view/2>
+                                            <div class='pull-left'><img class='img-circle' src='https://demo.inilabs.net/ihostel/v2.0/uploads/images/site.png'></div>
+                                            <h4>Programming Cont..<small><i class='fa fa-clock-o'></i> 7 months</small></h4>
+                                            <p>On 20-11-2..</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=https://demo.inilabs.net/ihostel/v2.0/notice/view/1>
+                                            <div class='pull-left'><img class='img-circle' src='https://demo.inilabs.net/ihostel/v2.0/uploads/images/site.png'></div>
+                                            <h4>Annual Sports Da..<small><i class='fa fa-clock-o'></i> 7 months</small></h4>
+                                            <p>In your sc..</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class='footer'><a href=https://demo.inilabs.net/ihostel/v2.0/notice/index>See All Notifications</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img class="language-img" src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/english.png" />
+                            <span class="label label-warning">14</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header"> Language</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li class="language" id="arabic">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/arabic">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/arabic.png" />
+                                            </div>
+                                            <h4>
+                                                Arabic
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="bengali">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/bengali">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/bengali.png" />
+                                            </div>
+                                            <h4>
+                                                Bengali
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="chinese">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/chinese">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/chinese.png" />
+                                            </div>
+                                            <h4>
+                                                Chinese
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="english">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/english">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/english.png" />
+                                            </div>
+                                            <h4>
+                                                English
+                                                <i class='glyphicon glyphicon-ok'></i> </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="french">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/french">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/french.png" />
+                                            </div>
+                                            <h4>
+                                                French
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="german">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/german">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/german.png" />
+                                            </div>
+                                            <h4>
+                                                German
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="hindi">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/hindi">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/hindi.png" />
+                                            </div>
+                                            <h4>
+                                                Hindi
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="indonesian">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/indonesian">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/indonesian.png" />
+                                            </div>
+                                            <h4>
+                                                Indonesian
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="italian">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/italian">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/italian.png" />
+                                            </div>
+                                            <h4>
+                                                Italian
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="romanian">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/romanian">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/romanian.png" />
+                                            </div>
+                                            <h4>
+                                                Romanian
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="russian">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/russian">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/russian.png" />
+                                            </div>
+                                            <h4>
+                                                Russian
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="spanish">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/spanish">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/spanish.png" />
+                                            </div>
+                                            <h4>
+                                                Spanish
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="thai">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/thai">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/thai.png" />
+                                            </div>
+                                            <h4>
+                                                Thai
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                    <li class="language" id="turkish">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/language/index/turkish">
+                                            <div class="pull-left">
+                                                <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/language_image/turkish.png" />
+                                            </div>
+                                            <h4>
+                                                Turkish
+                                            </h4>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="footer"></li>
+                        </ul>
+                    </li>
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/images/default.png" class="user-logo" alt="User Image" />
+
+                            <span>
+                                    Admin                                    <i class="caret"></i>
+                                </span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <!-- Menu Body -->
+
+                            <li class="user-body">
+                                <div class="col-xs-6 text-center">
+                                    <a href="https://demo.inilabs.net/ihostel/v2.0/profile/index">
+                                        <div><i class="fa fa-briefcase"></i></div>
+                                        Profile
+                                    </a>
+
+                                </div>
+                                <div class="col-xs-6 text-center">
+                                    <a href="https://demo.inilabs.net/ihostel/v2.0/signin/cpassword">
+                                        <div><i class="fa fa-lock"></i></div>
+                                        Password
+                                    </a>
+                                </div>
+                            </li>
+
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+
+                                <div class="text-center">
+                                    <a href="https://demo.inilabs.net/ihostel/v2.0/signin/signout">
+                                        <div><i class="fa fa-power-off"></i></div>
+                                        Log out
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+        <aside class="left-side sidebar-offcanvas">
+            <section class="sidebar">
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img style="display:block" src="https://demo.inilabs.net/ihostel/v2.0/uploads/images/default.png" class="img-circle" alt="" />
+                    </div>
+
+                    <div class="pull-left info">
+                        <p>Admin</p>
+                        <a href="https://demo.inilabs.net/ihostel/v2.0/profile/index">
+                            <i class="fa fa-hand-o-right color-green"></i> Super Admin </a>
+                    </div>
+                </div>
+
+                <ul class="sidebar-menu">
+                    <li class="active"><a href="https://demo.inilabs.net/ihostel/v2.0/dashboard"><i class="fa fa-laptop"></i><span>Dashboard</span> </a></li>
+                    <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/user"><i class="fa fa-users"></i><span>User</span> </a></li>
+                    <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/member"><i class="fa ini-member"></i><span>Member</span> </a></li>
+                    <li class="treeview "><a href="https://demo.inilabs.net/ihostel/v2.0/#"><i class="fa ini-bed"></i><span>Bed Manager</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/category"><i class="fa ini-category"></i><span>Category</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/room"><i class="fa ini-room"></i><span>Room</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/bed"><i class="fa fa-bed"></i><span>Bed</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/bedassign"><i class="fa ini-bedassign"></i><span>Bed Assign</span> </a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview "><a href="https://demo.inilabs.net/ihostel/v2.0/#"><i class="fa fa-cutlery"></i><span>Food Meal</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/fcategory"><i class="fa ini-fcategory"></i><span>Food Category</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/fsubcategory"><i class="fa ini-fsubcategory"></i><span>Food Sub Category</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/fooditem"><i class="fa ini-fooditem"></i><span>Food Item</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/pos"><i class="fa ini-pos"></i><span>Pos</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/order"><i class="fa fa-th-list"></i><span>Order</span> </a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview "><a href="https://demo.inilabs.net/ihostel/v2.0/#"><i class="fa fa-dollar"></i><span>Bill</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/bill"><i class="fa fa-money"></i><span>Bill</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/billpayment"><i class="fa fa-credit-card"></i><span>Bill Payment</span> </a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/notice"><i class="fa fa-calendar"></i><span>Notice</span> </a></li>
+                    <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/accountledgerreport"><i class="fa fa-calculator"></i><span>Account Ledger Report</span> </a></li>
+                    <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/visitorinfo"><i class="fa ini-visitorinfo"></i><span>Visitor Info</span> </a></li>
+                    <li class="treeview "><a href="https://demo.inilabs.net/ihostel/v2.0/#"><i class="fa ini-administrator"></i><span>Administrator</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/branch"><i class="fa ini-branch"></i><span>Branch</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/bcategory"><i class="fa ini-bcategory"></i><span>Branch Category</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/bulkimport"><i class="fa fa-upload"></i><span>Bulk Import</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/backup"><i class="fa fa-download"></i><span>Backup</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/role"><i class="fa ini-role"></i><span>Role</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/permission"><i class="fa ini-permission"></i><span>Permission</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/update"><i class="fa fa-refresh"></i><span>Update</span> </a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview "><a href="https://demo.inilabs.net/ihostel/v2.0/#"><i class="fa fa-gavel"></i><span>Settings</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/generalsetting"><i class="fa fa-gears"></i><span>General Setting</span> </a></li>
+                            <li class=""><a href="https://demo.inilabs.net/ihostel/v2.0/emailsetting"><i class="fa ini-emailsetting"></i><span>Email Setting</span> </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <aside class="right-side">
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-12" id="resetDummyData">
+                                <div class="callout callout-danger">
+                                    <h4>Reminder!</h4>
+                                    <p>Dummy data will be reset in every <code>30</code> minutes</p>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                    var count = 7;
+                                    var countdown = setInterval(function() {
+                                        $("p.countdown").html(count + " seconds remaining!");
+                                        if (count == 0) {
+                                            clearInterval(countdown);
+                                            $('#resetDummyData').hide();
+                                        }
+                                        count--;
+                                    }, 1000);
+                                });
+                            </script>
+                            <div class="col-lg-3 col-xs-6">
+                                <div class="small-box ">
+                                    <a class="small-box-footer bg-orange-dark" href="https://demo.inilabs.net/ihostel/v2.0/bill">
+                                        <div class="icon bg-orange-dark" style="padding: 9.5px 18px 6px 18px;">
+                                            <i class="fa fa-money"></i>
+                                        </div>
+                                        <div class="inner ">
+                                            <h3 class="text-white">
+                                                14 </h3 class="text-white">
+                                            <p class="text-white">
+                                                Bill </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xs-6">
+                                <div class="small-box ">
+                                    <a class="small-box-footer bg-teal-light" href="https://demo.inilabs.net/ihostel/v2.0/order">
+                                        <div class="icon bg-teal-light" style="padding: 9.5px 18px 6px 18px;">
+                                            <i class="fa fa-th-list"></i>
+                                        </div>
+                                        <div class="inner ">
+                                            <h3 class="text-white">
+                                                7 </h3 class="text-white">
+                                            <p class="text-white">
+                                                Order </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xs-6">
+                                <div class="small-box ">
+                                    <a class="small-box-footer bg-pink-light" href="https://demo.inilabs.net/ihostel/v2.0/fooditem">
+                                        <div class="icon bg-pink-light" style="padding: 9.5px 18px 6px 18px;">
+                                            <i class="fa ini-fooditem"></i>
+                                        </div>
+                                        <div class="inner ">
+                                            <h3 class="text-white">
+                                                8 </h3 class="text-white">
+                                            <p class="text-white">
+                                                Food Item </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xs-6">
+                                <div class="small-box ">
+                                    <a class="small-box-footer bg-purple-light" href="https://demo.inilabs.net/ihostel/v2.0/bedassign">
+                                        <div class="icon bg-purple-light" style="padding: 9.5px 18px 6px 18px;">
+                                            <i class="fa ini-bedassign"></i>
+                                        </div>
+                                        <div class="inner ">
+                                            <h3 class="text-white">
+                                                5 </h3 class="text-white">
+                                            <p class="text-white">
+                                                Bed Assign </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="box">
+                                    <div class="box-body" style="padding: 0px;">
+                                        <div id="collectionAndBill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <section class="panel">
+                                    <div class="profile-db-head bg-maroon-light">
+                                        <a href="https://demo.inilabs.net/ihostel/v2.0/profile/index">
+                                            <img src="https://demo.inilabs.net/ihostel/v2.0/uploads/images/default.png" alt="" /> </a>
+                                        <h1>Admin</h1>
+                                        <p>Super Admin</p>
+                                    </div>
+                                    <table class="table table-hover">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <i class="glyphicon glyphicon-user text-maroon-light"></i>
+                                                </td>
+                                                <td>Username</td>
+                                                <td>superadmin</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fa fa-envelope text-maroon-light"></i>
+                                                </td>
+                                                <td>Email</td>
+                                                <td>admin@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fa fa-phone text-maroon-light"></i>
+                                                </td>
+                                                <td>Phone</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class=" fa fa-globe text-maroon-light"></i>
+                                                </td>
+                                                <td>Address</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="box">
+                                    <div class="box-body" style="padding: 0px; height: 320px">
+                                        <div class="box">
+                                            <div class="box-header" style="background-color: #fff;">
+                                                <h3 class="box-title text-black">
+                                                    Notice </h3>
+                                            </div>
+
+                                            <div class="box-body" style="padding: 0px;">
+                                                <table class="table table-hover">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>U.S. Embassy Dhaka w..</td>
+                                                            <td>The U.S. Embassy, including the Consular Section and..</td>
+                                                            <td><a href="https://demo.inilabs.net/ihostel/v2.0/notice/view/4" class='btn btn-success btn-xs mrg' style='background-color:#FDB45C;color:#fff;border:1px solid #FDB45C' data-placement='top' data-toggle='tooltip'
+                                                                    data-original-title='View'><span class='fa fa-check-square-o'></span></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Prize Giving ceremon..</td>
+                                                            <td>Prizegiving ceremony will be held on 03-01-2019. Bes..</td>
+                                                            <td><a href="https://demo.inilabs.net/ihostel/v2.0/notice/view/3" class='btn btn-success btn-xs mrg' style='background-color:#FDB45C;color:#fff;border:1px solid #FDB45C' data-placement='top' data-toggle='tooltip'
+                                                                    data-original-title='View'><span class='fa fa-check-square-o'></span></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Programming Contest</td>
+                                                            <td>On 20-11-2019 will held a programming cont..</td>
+                                                            <td><a href="https://demo.inilabs.net/ihostel/v2.0/notice/view/2" class='btn btn-success btn-xs mrg' style='background-color:#FDB45C;color:#fff;border:1px solid #FDB45C' data-placement='top' data-toggle='tooltip'
+                                                                    data-original-title='View'><span class='fa fa-check-square-o'></span></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>Annual Sports Day</td>
+                                                            <td>In your school campus on 1-03-2019 will he..</td>
+                                                            <td><a href="https://demo.inilabs.net/ihostel/v2.0/notice/view/1" class='btn btn-success btn-xs mrg' style='background-color:#FDB45C;color:#fff;border:1px solid #FDB45C' data-placement='top' data-toggle='tooltip'
+                                                                    data-original-title='View'><span class='fa fa-check-square-o'></span></a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="box">
+                                    <div class="box-body">
+                                        <div id="calendar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script type="application/javascript">
+                            $(function() {
+                                LoadEarningMonthly();
+
+                                function LoadEarningMonthly() {
+                                    $('#earning_top_right_graph_title').html("Accounts Summary");
+                                    $("#earning_top_right_graph_back_btn").hide();
+                                    $('#collectionAndBill').highcharts({
+                                        chart: {
+                                            type: 'areaspline'
+                                        },
+                                        title: {
+                                            text: '2020 Accounts Summary'
+                                        },
+                                        subtitle: {
+                                            text: 'Click month income or expense column to view day wise account summary'
+                                        },
+                                        xAxis: {
+                                            categories: [
+                                                'January', 'February', 'March', 'April', 'May', 'June', 'July ', 'August', 'September', 'October', 'November', 'December'
+                                            ],
+                                            title: {
+                                                text: 'Month',
+                                                align: 'low'
+                                            }
+                                        },
+                                        yAxis: {
+                                            min: 0,
+                                            title: {
+                                                text: 'Amount',
+                                                align: 'high'
+                                            },
+                                            labels: {
+                                                overflow: 'justify'
+                                            }
+                                        },
+                                        tooltip: {
+                                            pointFormat: '{series.name}: <b>{point.y}</b>'
+                                        },
+                                        plotOptions: {
+                                            bar: {
+                                                dataLabels: {
+                                                    enabled: true
+                                                }
+                                            },
+                                            series: {
+                                                cursor: 'pointer',
+                                                point: {
+                                                    events: {
+                                                        click: function(e) {
+                                                            LoadDayWiseCollectionOrBill(this.type, this.monthID, this.monthName, this.dayWiseData);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        legend: {
+                                            layout: 'vertical',
+                                            align: 'left',
+                                            verticalAlign: 'top',
+                                            x: 5,
+                                            y: -10,
+                                            floating: true,
+                                            borderWidth: 1,
+                                            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+                                            shadow: true
+                                        },
+                                        credits: {
+                                            enabled: false
+                                        },
+                                        series: [{
+                                            name: 'Collection',
+                                            data: [{
+                                                y: 15220,
+                                                monthID: '01',
+                                                monthName: 'January',
+                                                'dayWiseData': '{"04":15220}',
+                                                'type': 'collection'
+                                            }, {
+                                                y: 0,
+                                                monthID: '02',
+                                                monthName: 'February',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'collection'
+                                            }, {
+                                                y: 0,
+                                                monthID: '03',
+                                                monthName: 'March',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'collection'
+                                            }, {
+                                                y: 0,
+                                                monthID: '04',
+                                                monthName: 'April',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'collection'
+                                            }, {
+                                                y: 0,
+                                                monthID: '05',
+                                                monthName: 'May',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'collection'
+                                            }, {
+                                                y: 0,
+                                                monthID: '06',
+                                                monthName: 'June',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'collection'
+                                            }, {
+                                                y: 0,
+                                                monthID: '07',
+                                                monthName: 'July ',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'collection'
+                                            }, {
+                                                y: 0,
+                                                monthID: '08',
+                                                monthName: 'August',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'collection'
+                                            }, {
+                                                y: 0,
+                                                monthID: '09',
+                                                monthName: 'September',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'collection'
+                                            }, {
+                                                y: 0,
+                                                monthID: '10',
+                                                monthName: 'October',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'collection'
+                                            }, {
+                                                y: 0,
+                                                monthID: '11',
+                                                monthName: 'November',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'collection'
+                                            }, {
+                                                y: 0,
+                                                monthID: '12',
+                                                monthName: 'December',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'collection'
+                                            }, ],
+                                            color: 'rgb(87,200,241)'
+                                        }, {
+                                            name: 'Bill',
+                                            data: [{
+                                                y: 37500,
+                                                monthID: '1',
+                                                monthName: 'January',
+                                                'dayWiseData': '{"04":37500}',
+                                                'type': 'expense'
+                                            }, {
+                                                y: 0,
+                                                monthID: '2',
+                                                monthName: 'February',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'expense'
+                                            }, {
+                                                y: 0,
+                                                monthID: '3',
+                                                monthName: 'March',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'expense'
+                                            }, {
+                                                y: 0,
+                                                monthID: '4',
+                                                monthName: 'April',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'expense'
+                                            }, {
+                                                y: 0,
+                                                monthID: '5',
+                                                monthName: 'May',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'expense'
+                                            }, {
+                                                y: 0,
+                                                monthID: '6',
+                                                monthName: 'June',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'expense'
+                                            }, {
+                                                y: 0,
+                                                monthID: '7',
+                                                monthName: 'July ',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'expense'
+                                            }, {
+                                                y: 0,
+                                                monthID: '8',
+                                                monthName: 'August',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'expense'
+                                            }, {
+                                                y: 0,
+                                                monthID: '9',
+                                                monthName: 'September',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'expense'
+                                            }, {
+                                                y: 0,
+                                                monthID: '10',
+                                                monthName: 'October',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'expense'
+                                            }, {
+                                                y: 0,
+                                                monthID: '11',
+                                                monthName: 'November',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'expense'
+                                            }, {
+                                                y: 0,
+                                                monthID: '12',
+                                                monthName: 'December',
+                                                'dayWiseData': '{"01":0}',
+                                                'type': 'expense'
+                                            }, ],
+                                            color: 'rgb(216,27,96)'
+                                        }]
+                                    });
+                                }
+
+                                function LoadDayWiseCollectionOrBill(type, monthID, monthName, dayWiseData) {
+                                    $('#earning_top_right_graph_title').html(monthName + " month " + type);
+                                    $("#earning_top_right_graph_back_btn").show();
+                                    $("#earning_top_right_graph_back_btn").unbind("click");
+                                    $("#earning_top_right_graph_back_btn").on("click", function() {
+                                        LoadEarningMonthly();
+                                    });
+                                    var categories = [];
+                                    var series = [];
+                                    var chartDayWiseData = [];
+                                    var color = '#000';
+                                    var tooltipTitle = '';
+
+                                    if (type == 'collection') {
+                                        color = 'rgb(87,200,241)';
+                                        tooltipTitle = 'Collection';
+                                    } else {
+                                        color = 'rgb(216,27,96)';
+                                        tooltipTitle = 'Bill';
+                                    }
+
+                                    $.ajax({
+                                        type: 'POST',
+                                        url: "https://demo.inilabs.net/ihostel/v2.0/dashboard/dayWiseCollectionOrBill",
+                                        data: {
+                                            "dayWiseData": dayWiseData,
+                                            'type': type,
+                                            'monthID': monthID,
+                                            'monthName': monthName
+                                        },
+                                        dataType: "html",
+                                        success: function(data) {
+                                            data = $.parseJSON(data);
+                                            $.each(data, function(i, value) {
+                                                categories.push('Day ' + i);
+                                                chartDayWiseData.push(value);
+                                            });
+                                            $('#collectionAndBill').highcharts({
+                                                chart: {
+                                                    type: 'areaspline',
+                                                    events: {
+                                                        drillup: function(e) {
+                                                            alert('drill Up');
+                                                            console.log(this);
+                                                            console.log(this.options.series[0].name);
+                                                            console.log(this.options.series[0].data[0].name);
+                                                        }
+                                                    }
+                                                },
+                                                title: {
+                                                    text: monthName + " month " + type
+                                                },
+                                                subtitle: {
+                                                    text: ''
+                                                },
+                                                xAxis: {
+                                                    categories: categories,
+                                                    title: {
+                                                        text: null
+                                                    }
+                                                },
+                                                yAxis: {
+                                                    min: 0,
+                                                    title: {
+                                                        text: 'Amount',
+                                                        align: 'high'
+                                                    },
+                                                    labels: {
+                                                        overflow: 'justify'
+                                                    }
+                                                },
+                                                tooltip: {
+                                                    pointFormat: '{series.name}: <b>{point.y}</b>'
+                                                },
+                                                plotOptions: {
+                                                    bar: {
+                                                        dataLabels: {
+                                                            enabled: true
+                                                        }
+                                                    },
+                                                    series: {
+                                                        cursor: 'pointer',
+                                                        point: {
+                                                            events: {
+                                                                click: function(e) {}
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                legend: {
+                                                    layout: 'vertical',
+                                                    align: 'left',
+                                                    verticalAlign: 'top',
+                                                    x: 0,
+                                                    y: 0,
+                                                    floating: true,
+                                                    borderWidth: 1,
+                                                    backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+                                                    shadow: true
+                                                },
+                                                credits: {
+                                                    enabled: false
+                                                },
+                                                exporting: {
+                                                    buttons: {
+                                                        customButton: {
+                                                            x: -40,
+                                                            onclick: function() {
+                                                                LoadEarningMonthly();
+                                                            },
+                                                            text: "<< Back",
+                                                        }
+                                                    }
+                                                },
+                                                series: [{
+                                                    name: tooltipTitle,
+                                                    data: chartDayWiseData,
+                                                    color: color
+                                                }]
+                                            });
+                                        }
+                                    });
+                                }
+                            });
+                        </script>
+                        <script type="application/javascript">
+                            $(function() {
+                                $('#calendar').fullCalendar({
+                                    theme: true,
+                                    customButtons: {
+                                        reload: {
+                                            text: 'Reload',
+                                            click: function() {}
+                                        }
+                                    },
+                                    header: {
+                                        left: 'prev,next today',
+                                        center: 'title',
+                                        right: 'month,agendaWeek,agendaDay,listMonth'
+                                    },
+                                    navLinks: true,
+                                    editable: false,
+                                    eventLimit: true,
+                                    events: [{
+                                        title: 'U.S. Embassy Dhaka will be Closed December 24-25, 2019 in Observance of the Christmas Holiday',
+                                        start: '2020-02-11',
+                                        end: '2020-02-11',
+                                        url: 'https://demo.inilabs.net/ihostel/v2.0/notice/view/4',
+                                        color: '#5C6BC0'
+                                    }, {
+                                        title: 'Prize Giving ceremony (Best Student)',
+                                        start: '2020-03-18',
+                                        end: '2020-03-18',
+                                        url: 'https://demo.inilabs.net/ihostel/v2.0/notice/view/3',
+                                        color: '#5C6BC0'
+                                    }, {
+                                        title: 'Programming Contest',
+                                        start: '2020-01-14',
+                                        end: '2020-01-14',
+                                        url: 'https://demo.inilabs.net/ihostel/v2.0/notice/view/2',
+                                        color: '#5C6BC0'
+                                    }, {
+                                        title: 'Annual Sports Day',
+                                        start: '2020-05-18',
+                                        end: '2020-05-18',
+                                        url: 'https://demo.inilabs.net/ihostel/v2.0/notice/view/1',
+                                        color: '#5C6BC0'
+                                    }, ]
+                                });
+                            });
+                        </script>
+
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>v</b> 2.0 </div>
+            <strong>Copyright &copy; Ihostel School Management</strong>
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+    <!-- Bootstrap js -->
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/bootstrap/bootstrap.min.js"></script>
+    <!-- Style js -->
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/inilabs/style.js"></script>
+
+    <!-- Jquery datatable js -->
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/datatables/jquery.dataTables.js"></script>
+    <!-- Datatable js -->
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/datatables/dataTables.bootstrap.js"></script>
+
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/inilabs/inilabs.js"></script>
+    <!-- autocomplete plugin select2 js -->
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/select2/select2.js"></script>
+    <!-- Jquery UI jquery -->
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/jqueryUI/jqueryui.min.js"></script>
+    <!-- Jquery gritter -->
+    <!--  Bootstrap  Touchspin-->
+    <script type="text/javascript" src="https://demo.inilabs.net/ihostel/v2.0/assets/touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        $("ul.sidebar-menu li").each(function() {
+            if ($(this).attr('class') === 'active') {
+                $(this).parents('li').addClass('active');
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(".select2").select2();
+
+        $(document).ready(function() {
+            $("#withoutBtn").dataTable();
+
+            $('#example3, #example1, #example2').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copyHtml5',
+                    'excelHtml5',
+                    'csvHtml5',
+                    'pdfHtml5'
+                ],
+                search: false
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+﻿@model List<Post>
+@{
+
+    ViewData["Title"] = "Website de bloga";
+    ViewBag.Description = "Demo learning";
+    ViewBag.Keywords = "blog, programming";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<img src="~/Content/static/chair.jpg" width="20" height="20" />
+<div>
+   <input type="button" value="Click me" class="btn btn-danger"/>
+    <ul>
+        @*@foreach (var post in Model)
+        {
+            <li>
+                <a asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">@post.Title</a>
+                -
+                <a asp-controller="Home" asp-action="Edit" asp-route-id="@post.Id">Edit</a>
+                -
+                <a asp-controller="Home" asp-action="Remove" asp-route-id="@post.Id">Delete</a>
+            </li>
+        }*@
+    </ul>
+</div>
+
+

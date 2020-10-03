@@ -1,0 +1,26 @@
+﻿@model CommentViewModel
+
+@{ 
+
+}
+
+<div>
+
+    <div class="hljs-comment">
+        <form method="post" asp-controller="Home" asp-action="Comment">
+            
+            Welcome to post comments here
+
+            <input asp-for="PostId" type="hidden" />
+            <br />
+            <input asp-for="MainCommentId" type="hidden"/>
+            <br />
+            <input asp-for="Message" />
+            <br />
+            <input type="Submit" value="Submit"/>
+
+        </form>
+    </div>
+
+
+</div>

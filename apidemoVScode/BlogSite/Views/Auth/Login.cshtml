@@ -1,0 +1,27 @@
+﻿@using BlogSite.Models.MVVM
+@model  LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Login</h1>
+
+<form asp_controler="Auth" asp-action="Login" method="post">
+    <div>
+        User Name
+        <input asp-for="UserName" />
+    </div>
+
+    <div>
+        Pwd
+        <input asp-for="Password" type="password" />
+    </div>
+    <input type="submit" value="Sing In"/>
+
+
+    <a asp-controller="Auth" asp-action="Register">Reigster</a>
+
+</form>
+

@@ -1,0 +1,95 @@
+﻿@model BlogSite.Models.Book
+
+@{
+    ViewData["Title"] = "AddNewBook";
+    Layout = "~/Views/Shared/_homepgLayout.cshtml";
+}
+
+<h1>AddNewBook</h1>
+
+<h4>Book</h4>
+<hr />
+<div class="container">
+    <h3 class="display-4">New Books</h3>
+    <hr />
+    @if (ViewBag.IsSuccess == true)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong>
+            New book added click <a asp-controller="book" asp-action="getbook" asp-route-id="@ViewBag.Id">here</a> to view details
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    <form method="post" asp-action="AddNewBook">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Id" class="control-label"></label>
+            <input asp-for="Id" class="form-control" />
+            <span asp-validation-for="Id" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        @*<div class="form-group">
+                <label asp-for="AuthName" class="control-label"></label>
+                <input asp-for="AuthName" class="form-control" />
+                <span asp-validation-for="AuthName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShortDescp" class="control-label"></label>
+                <input asp-for="ShortDescp" class="form-control" />
+                <span asp-validation-for="ShortDescp" class="text-danger"></span>
+            </div>*@
+        <div class="form-group">
+            <label asp-for="LongDescp" class="control-label"></label>
+            <textarea asp-for="LongDescp" class="form-control"></textarea>
+
+        </div>
+        @*<div class="form-group">
+                <label asp-for="ThumbnailURL" class="control-label"></label>
+                <input asp-for="ThumbnailURL" class="form-control" />
+                <span asp-validation-for="ThumbnailURL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                <input asp-for="Category" class="form-control" />
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalPages" class="control-label"></label>
+                <input asp-for="TotalPages" class="form-control" />
+                <span asp-validation-for="TotalPages" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Language" class="control-label"></label>
+                <input asp-for="Language" class="form-control" />
+                <span asp-validation-for="Language" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookPdfUrl" class="control-label"></label>
+                <input asp-for="BookPdfUrl" class="form-control" />
+                <span asp-validation-for="BookPdfUrl" class="text-danger"></span>
+            </div>*@
+        <div class="form-group">
+            <input type="submit" value="Add New" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
