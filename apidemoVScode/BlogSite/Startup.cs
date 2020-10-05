@@ -38,12 +38,13 @@ namespace BlogSite
                 .AddEntityFrameworkStores<AppDbContext>();
 
             services.AddDbContext<AppDbContext>(opts => opts.UseSqlServer(Configuration["DefaultConnectoin"]));
+            services.AddDbContext<BookContext>(opts => opts.UseSqlServer(Configuration["DefaultConnectoin"]));
 
             services.ConfigureApplicationCookie(opt => opt.LoginPath = "/Auth/Login");
 
             services.AddTransient<IRepository, Repository>();
             services.AddTransient<IFileManager, FileManager>();
-
+            services.AddTransient<IBookRepository, BookRepository>();
 
         
             //services.AddMvc(opt => {
@@ -53,7 +54,11 @@ namespace BlogSite
 
             services.AddControllersWithViews();
 #if DEBUG //debug mode other is release
-            services.AddRazorPages().AddRazorRuntimeCompilation(); //to refelect run time changes of views on browser
+            services.AddRazorPages().AddRazorRuntimeCompilation().AddViewOptions(opt => {
+
+                opt.HtmlHelperOptions.ClientValidationEnabled = true; //enable or disable from here
+            
+            }); //to refelect run time changes of views on browser
 #endif
 
         //    services.AddWebMarkupMin(

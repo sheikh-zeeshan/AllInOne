@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_homepgLayout.cshtml";
+}
+
+<h1>Index</h1>
+
+<section class="jumbotron text-center">
+
+    <div class="container">
+        <h1> welcome to hostel manager</h1>
+        <p class="lead text-muted">
+            sadasdsadasdsad
+            asda asdasd
+            asdasdsadas
+        </p>
+        <p>
+            <a href="#" class="btn btn-primary my-2">search books</a>
+        </p>
+    </div>
+
+    
+        <div class="py-4 bg-light">
+            <div class="container">
+                <big>Top Books</big>
+                <p big>Top books using attributes</p>
+                <div class="row">
+                   
+                    <div class="col-md-4">
+                        @*<partial name="_bookDetails" model="new Book()"/>*@
+                        @Html.Partial("_bookDetails", new Book())
+
+                    </div>
+                   
+                        <div class="col-md-4">
+                            @*<partial name="_bookDetails" model="new Book()"/>*@
+                            @await Html.PartialAsync("_bookDetails", new Book())
+                        </div>
+                  
+                  
+                        <div class="col-md-4">
+                            @*<partial name="_bookDetails" model="new Book()"/>*@
+                            @{ 
+                                await Html.RenderPartialAsync("_bookDetails", new Book());
+                            }
+                        </div>
+                  
+                </div>
+            </div>
+        </div>
+      
+
+</section>
+
+@section scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //alert('hello');
+        });
+    </script>
+}
+
+@section breadcrumb{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Book</a></li>
+            <li class="breadcrumb-item active" aria-current="page">index</li>
+        </ol>
+    </nav>
+}

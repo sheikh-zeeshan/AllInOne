@@ -23,8 +23,7 @@ namespace BlogSite.Data
 
         void AddSubComments(SubComments comment);
 
-        List<Book> GetAllBooks(string category);
-        Book GetBookById(int id);
+       
     }
     public class Repository : IRepository
     {
@@ -88,30 +87,7 @@ namespace BlogSite.Data
             _AppContext.SubComments.Add(comment);
         }
 
-        public List<Book> GetAllBooks(string category)
-        {
-            return GetAllBooksFromSource();
-
-        }
-
-        List<Book> GetAllBooksFromSource()
-        {
-
-            return new List<Book> {
-
-            new Book{BookPdfUrl="www.pdf.net", Category="Programming",Language="Eng", TotalPages="100",  AuthName="Peter Jackson", Id=1,LongDescp="long desc", Name="Programming in 10 days", ShortDescp="aa", ThumbnailURL="", Title="Mastering DB" },
-            new Book{BookPdfUrl="www.pdf.net", Category="Programming",Language="Eng", TotalPages="100",AuthName="Andy Merphy", Id=2,LongDescp="long desc asdasd dfdsf sdfsd", Name="Angular", ShortDescp="cc", ThumbnailURL="", Title="Working in angular" },
-            };
-
-
-        }
-
-       public Book GetBookById(int id)
-        {
-            var data = GetAllBooksFromSource();
-
-            return data.SingleOrDefault(x => x.Id == id);
-        }
+      
 
     }
 }

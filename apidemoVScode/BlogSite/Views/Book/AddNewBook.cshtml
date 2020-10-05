@@ -1,4 +1,4 @@
-﻿@model BlogSite.Models.Book
+﻿@model BlogSite.Models.BookModel
 
 @{
     ViewData["Title"] = "AddNewBook";
@@ -23,65 +23,114 @@
         </div>
     }
 
-    <form method="post" asp-action="AddNewBook">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="form-group">
-            <label asp-for="Id" class="control-label"></label>
-            <input asp-for="Id" class="form-control" />
-            <span asp-validation-for="Id" class="text-danger"></span>
+    <div class="d-flex justify-content-center" >
+        <div class="spinner-border" id="myLoader"  style="display:none" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <div class="form-group">
-            <label asp-for="Name" class="control-label"></label>
-            <input asp-for="Name" class="form-control" />
-            <span asp-validation-for="Name" class="text-danger"></span>
-        </div>
-        @*<div class="form-group">
-                <label asp-for="AuthName" class="control-label"></label>
-                <input asp-for="AuthName" class="form-control" />
-                <span asp-validation-for="AuthName" class="text-danger"></span>
+    </div>
+
+    <form asp-action="AddNewBook" asp-controller="Book"  enctype="multipart/form-data"
+          data-ajax="false"
+          data-ajax-complete="onComplete"
+          data-ajax-success="onSuccess"
+          data-ajax-failure="onFailure"
+          data-ajax-loading="#myLoader"
+          data-ajax-method="POST"
+          data-ajax-mode="replace"
+          data-ajax-update="#ajaxresult">
+        <div id="ajaxresult">
+
+
+            <div asp-validation-summary="All" class="text-danger">
+
+            </div>
+
+            <div class="form-group">
+
+                <input asp-for="Id" class="form-control" type="hidden" />
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Language" class="control-label"></label>
+                <select asp-for="Language" class="control-label" required asp-items="ViewBag.Languages">
+                    <option value="">Please choose book language</option>
+                    @*< <option value="Eng" selected>English (Global language)</option>
+                <option value="Urd">Urdu (Regional language)</option>*@
+                </select>
+                <span asp-validation-for="Language" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" aria-describedby="TitleHelp" placeholder="Enter Title" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Author" class="control-label"></label>
+                <input asp-for="Author" class="form-control" />
+                <span asp-validation-for="Author" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Title" class="control-label"></label>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ShortDescp" class="control-label"></label>
-                <input asp-for="ShortDescp" class="form-control" />
-                <span asp-validation-for="ShortDescp" class="text-danger"></span>
-            </div>*@
-        <div class="form-group">
-            <label asp-for="LongDescp" class="control-label"></label>
-            <textarea asp-for="LongDescp" class="form-control"></textarea>
 
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+
+            </div>
+            @*<div class="form-group">
+            <label asp-for="ThumbnailURL" class="control-label"></label>
+            <input asp-for="ThumbnailURL" class="form-control" />
+            <span asp-validation-for="ThumbnailURL" class="text-danger"></span>
         </div>
-        @*<div class="form-group">
-                <label asp-for="ThumbnailURL" class="control-label"></label>
-                <input asp-for="ThumbnailURL" class="form-control" />
-                <span asp-validation-for="ThumbnailURL" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Category" class="control-label"></label>
-                <input asp-for="Category" class="form-control" />
-                <span asp-validation-for="Category" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TotalPages" class="control-label"></label>
-                <input asp-for="TotalPages" class="form-control" />
-                <span asp-validation-for="TotalPages" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Language" class="control-label"></label>
-                <input asp-for="Language" class="form-control" />
-                <span asp-validation-for="Language" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BookPdfUrl" class="control-label"></label>
-                <input asp-for="BookPdfUrl" class="form-control" />
-                <span asp-validation-for="BookPdfUrl" class="text-danger"></span>
-            </div>*@
         <div class="form-group">
-            <input type="submit" value="Add New" class="btn btn-primary" />
+            <label asp-for="Category" class="control-label"></label>
+            <input asp-for="Category" class="form-control" />
+            <span asp-validation-for="Category" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TotalPages" class="control-label"></label>
+            <input asp-for="TotalPages" class="form-control" />
+            <span asp-validation-for="TotalPages" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Language" class="control-label"></label>
+            <input asp-for="Language" class="form-control" />
+            <span asp-validation-for="Language" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="BookPdfUrl" class="control-label"></label>
+            <input asp-for="BookPdfUrl" class="form-control" />
+            <span asp-validation-for="BookPdfUrl" class="text-danger"></span>
+        </div>*@
+
+            <div class="form-group">
+                <label asp-for="CoverPhoto" class="control-label"></label>
+                <div class="custom-file">
+                    <input asp-for="CoverPhoto" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <span asp-validation-for="CoverPhoto" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="CoverPhotos" class="control-label"></label>
+                <div class="custom-file">
+                    <input asp-for="CoverPhotos" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose files</label>
+                </div>
+                <span asp-validation-for="CoverPhotos" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Add New" class="btn btn-primary" />
+            </div>
         </div>
     </form>
 </div>
@@ -93,3 +142,12 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
+@section scripts{ 
+
+<script>
+    function onComplete() { alert('onComplete'); }
+    function onSuccess() { alert('onSuccess'); }
+    function onFailure() { alert('onFailure');}
+</script>
+
+}

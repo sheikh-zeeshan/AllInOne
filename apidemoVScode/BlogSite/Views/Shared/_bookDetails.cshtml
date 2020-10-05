@@ -1,0 +1,24 @@
+﻿@model Book;
+
+<div class="card mb-4 shadow-sm">
+    <img src="@(string.IsNullOrEmpty(Model.ThumbnailURL) ? "/images/noimage.png" : "/book/cover/" + Model.ThumbnailURL)" class="img-thumbnail" />
+
+    <div class="card-body">
+        <h3 class="card-title">@(string.IsNullOrEmpty(Model.Title) ? "Title not found" : Model.Title)</h3>
+        <p class="card-text"> @(string.IsNullOrEmpty(Model.LongDescp) ? "DEsc not found" : Model.LongDescp)</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                @*<a href="/book/getbook/@Model.Id" asp-fragment="similarBooks" class="btn btn-sm btn-outline-secondary">View Details</a>*@
+
+                <a class="btn btn-sm btn-outline-secondary" asp-controller="Book" asp-action="getbook" asp-route-id="@Model.Id" asp-fragment="similarBooks">View Details</a>
+            </div>
+
+            <small class="text-muted">@(string.IsNullOrEmpty(Model.AuthName) ? "NA" : Model.AuthName)</small>
+
+        </div>
+        <div class="d-flex  align-items-md-start">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+</div>

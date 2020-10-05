@@ -21,15 +21,15 @@ namespace BlogSite.Data
         public DbSet<MainComments> MainComments { get; set; }
         public DbSet<SubComments> SubComments { get; set; }
 
-        public DbSet<Book> Books{ get; set; }
+       // public DbSet<Book> Books{ get; set; }
     }
 
-    public class ctx: DbContext
-    {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("");
-            base.OnConfiguring(optionsBuilder);
-        }
-    }
+    //public class ctx: DbContext
+    //{
+    //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //    {
+    //        optionsBuilder.UseSqlServer("");
+    //        base.OnConfiguring(optionsBuilder);
+    //    }
+    //}
 }
