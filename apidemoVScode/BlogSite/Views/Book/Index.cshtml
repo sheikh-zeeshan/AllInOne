@@ -25,6 +25,10 @@
             <div class="container">
                 <big>Top Books</big>
                 <p big>Top books using attributes</p>
+
+                @await Component.InvokeAsync("TopBooks") 
+                <hr />
+                <vc:top-books></vc:top-books>
                 <div class="row">
                    
                     <div class="col-md-4">

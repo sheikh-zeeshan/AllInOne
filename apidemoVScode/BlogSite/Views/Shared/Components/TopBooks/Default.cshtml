@@ -1,0 +1,13 @@
+﻿@model List<Book>
+
+<div class="row">
+    Hello
+    @*@foreach (var item in Model)
+    {
+    <div class="col-md-4">
+        <partial name="_bookDetails" model="new Book()"/> 
+   
+    </div>
+    }*@
+
+</div>

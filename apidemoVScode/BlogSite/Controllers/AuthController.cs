@@ -31,6 +31,7 @@ namespace BlogSite.Controllers
 
             if (result.Succeeded)
             {
+                
                 _signInManager.SignInAsync(adminUser, false);
                 return RedirectToAction("Index", "Home");
             }

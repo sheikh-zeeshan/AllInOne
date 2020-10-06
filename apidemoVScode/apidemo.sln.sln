@@ -22,8 +22,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogSite", "BlogSite\BlogSi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleForDemo", "SimpleForDemo\SimpleForDemo.csproj", "{2A9B6FD9-618E-4D09-A2C4-79038EADA3DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinkAndGo", "DrinkAndGo\DrinkAndGo.csproj", "{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -118,18 +116,6 @@ Global
 		{2A9B6FD9-618E-4D09-A2C4-79038EADA3DC}.Release|x64.Build.0 = Release|Any CPU
 		{2A9B6FD9-618E-4D09-A2C4-79038EADA3DC}.Release|x86.ActiveCfg = Release|Any CPU
 		{2A9B6FD9-618E-4D09-A2C4-79038EADA3DC}.Release|x86.Build.0 = Release|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Debug|x64.Build.0 = Debug|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Debug|x86.Build.0 = Debug|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Release|x64.ActiveCfg = Release|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Release|x64.Build.0 = Release|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Release|x86.ActiveCfg = Release|Any CPU
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,7 +123,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C81F3034-D894-4C36-9B33-75FA46EE97FA} = {EE15D14B-40AB-49AE-B5F2-6EB4A5480224}
 		{2A9B6FD9-618E-4D09-A2C4-79038EADA3DC} = {EE15D14B-40AB-49AE-B5F2-6EB4A5480224}
-		{8CE0E431-9A12-4980-96F7-E83FFBE6D0E1} = {EE15D14B-40AB-49AE-B5F2-6EB4A5480224}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {606A76D0-65D6-4E55-A6CA-F96AAB9640E5}

@@ -1,4 +1,5 @@
 ﻿using BlogSite.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace BlogSite.Data
     public interface IBookRepository
     {
         List<Book> GetAllBooks(string category);
+        Task<List<Book>> GetTopBooksAsync ();
         Book GetBookById(int id);
 
         bool SaveChanges();
@@ -77,6 +79,11 @@ namespace BlogSite.Data
                 return true;
             }
             return false;
+        }
+
+        public async Task<List<Book>> GetTopBooksAsync()
+        {
+            return await _bkCtx.Books.Take(2).ToListAsync();
         }
     }
 }

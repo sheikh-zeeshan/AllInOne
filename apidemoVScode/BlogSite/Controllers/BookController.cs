@@ -37,6 +37,14 @@ namespace BlogSite.Controllers
             return View(result);
         }
 
+        public async Task<IActionResult> GetTopBooksAsync()
+        {
+
+            var result =await  _repo.GetTopBooksAsync();
+
+            return View(result);
+        }
+
         // [Route("book-details/{id}",Name ="_rtbkdetailById")]
         public ViewResult GetBook(int id)
         {
@@ -180,6 +188,7 @@ namespace BlogSite.Controllers
             return View();
         }
 
+        [NonAction]
         private void UploadFile(string serverFolder, IFormFile coverPhoto)
         {
             coverPhoto.CopyTo(new FileStream(serverFolder, FileMode.Create));
