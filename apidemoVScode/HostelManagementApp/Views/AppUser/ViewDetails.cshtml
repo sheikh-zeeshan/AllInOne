@@ -1,0 +1,30 @@
+﻿@model HostelManagementApp.Models.AppUser
+ 
+@{
+    ViewData["Title"] = "Update";
+}
+
+
+<h2>Details</h2>
+
+<form method="post">
+    <p>
+        <label asp-for="Name">Your Name:</label>
+        <input asp-for="Name"  type="text" class="input-validation-error" data-val="true" data-val-required="Please enter your name" id="Name" name="Name" value="" />
+
+        <span asp-validation-for="Name"></span>
+    </p>
+    <p>
+        <label asp-for="DOB">Your Age:</label>
+        <input asp-for="DOB" />
+        <span asp-validation-for="DOB"></span>
+    </p>
+    <p>
+        <label asp-for="Email">Your Email:</label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </p>
+    
+   
+    <p><button type="submit">Submit</button></p>
+</form>
