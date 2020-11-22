@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "defines": [
+                "ARDUINO=10800"
+            ],
+            "includePath": [
+                "${workspaceRoot}",
+                "C:\\Users\\Zeeshan.Asghar\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\**",
+                "C:\\Users\\Zeeshan.Asghar\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
+                "D:\\Downloads\\arduino-1.8.13-windows\\arduino-1.8.13\\hardware\\tools\\**",
+                "D:\\Downloads\\arduino-1.8.13-windows\\arduino-1.8.13\\libraries\\**",
+                "C:\\Users\\Zeeshan.Asghar\\Documents\\Arduino\\hardware\\tools\\**",
+                "C:\\Users\\Zeeshan.Asghar\\Documents\\Arduino\\libraries\\**"
+            ],
+            "forcedInclude": [],
+            "intelliSenseMode": "clang-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.27.29110/bin/Hostx64/x64/cl.exe"
+        }
+    ],
+    "version": 4
+}
