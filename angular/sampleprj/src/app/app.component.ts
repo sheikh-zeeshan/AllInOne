@@ -10,7 +10,7 @@ export class AppComponent {
   _proj_date = new Date();
 
 constructor(){
-  console.log("start..");
+  console.log("start.. component");
 }
 
 }
