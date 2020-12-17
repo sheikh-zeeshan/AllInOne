@@ -1,6 +1,14 @@
 <h1> HELLO WORLD</h1>
 
-CURRENT DATE IS {{_proj_date}}
-<router-outlet></router-outlet>
+CURRENT DATE IS {{_proj_date}} hello from {{_name.toUpperCase()}}
 
+<h3>{{welcomMSG()}}</h3>
+
+<button style="color: red;background-color:yellow;">submit</button>
+<input id={{myId}} value="zeeshan" />
+<button class="colorStyleClass boldStyleClass" (click)='onClick()'>My Styles</button> {{message}}
+
+<input type="text" [(ngModel)]="name">{{name}}
+<router-outlet></router-outlet>
+<!-- <app-root></app-root> -->
 <app-courses></app-courses>

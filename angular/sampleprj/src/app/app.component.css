@@ -1,3 +1,20 @@
 h1 {
     color: red;
 }
+
+.colorStyleClass {
+    color: red;
+    font-size: 20px;
+}
+
+.boldStyleClass {
+    font-weight: bold;
+}
+
+.obliqueStyleClass {
+    font-style: oblique;
+}
+
+.variantStyleClass {
+    font-variant: small-caps;
+}

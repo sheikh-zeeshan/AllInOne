@@ -1,0 +1,231 @@
+dotnet new sln --name Grid.API.Movies
+
+dotnet new webapi -n Grid.API.Movies
+
+dotnet new classlib -n Grid.Model
+
+dotnet new xunit -n Grid.APITest
+
+dotnet new mvc -n Grid.Movies
+
+
+dotnet sln APIdemo.sln add Grid.API.Movies/Grid.API.Movies.csproj
+
+dotnet add Grid.API.Movies/Grid.API.Movies.csproj reference Grid.Model/Grid.Model.csproj 
+
+
+/* Code snippets =>https://marketplace.visualstudio.com/items?itemName=doggy8088.netcore-snippets
+Prefix	Description
+nc-	General .NET Core Snippets
+anc3-	ASP.NET Core 3 Snippets
+api-	ASP.NET Core Web API Snippets             <===================
+mvc-	ASP.NET Core MVC Snippets
+services-	ASP.NET Core Snippets in Startup.cs
+app-	ASP.NET Core Snippets in Startup.cs
+middleware-	ASP․NET Core Middleware Snippets
+signalr-	ASP.NET Core SignalR Snippets
+grpc-	ASP․NET Core gRPC Snippets
+ef-	Entity Framework Core Snippets
+-----
+C# (**/Program.cs)
+Prefix	Description
+anc3-program-cs	Generates basic Program class for ASP.NET Core 3
+--------------
+C# (**/Startup*.cs)
+Prefix	Description
+anc3-startup-mvc	Generates ASP.NET Core MVC Startup class
+anc3-startup-api	Generates ASP.NET Core Web API Startup class
+services-configure	Generates Configure() in Startup.ConfigureService()
+services-add-transient-1	Generates services.AddTransient<TService>() in Startup.ConfigureService()
+services-add-transient-2	Generates services.AddTransient<IService, TImplementation>() in Startup.ConfigureService()
+services-add-transient-3	Generates service.AddTransient<T>(FactoryMethod) in Startup.ConfigureService()
+services-add-scoped-1	Generates services.AddScoped<TService>() in Startup.ConfigureService()
+services-add-scoped-2	Generates services.AddScoped<IService, TImplementation>() in Startup.ConfigureService()
+services-add-scoped-3	Generates service.AddScoped<T>(FactoryMethod) in Startup.ConfigureService()
+services-add-singleton-1	Generates services.AddSingleton<TService>() in Startup.ConfigureService()
+services-add-singleton-2	Generates services.AddSingleton<IService, TImplementation>() in Startup.ConfigureService()
+services-add-singleton-3	Generates service.AddSingleton<T>(FactoryMethod) in Startup.ConfigureService()
+services-add-singleton-4	Generates services.AddSingleton<IService>(new TService()) in Startup.ConfigureService()
+services-add-cors	Generates AddCors() in Startup.ConfigureService()
+services-add-dbcontext	Generates AddDbContext() with UseSqlServer in Startup.ConfigureService()
+services-add-dbcontext-inmemory	Generates AddDbContext() with UseInMemoryDatabase in Startup.ConfigureService()
+services-add-auth-cookie	Generates AddAuthentication().AddCookie() in Startup.ConfigureService()
+services-add-auth-jwt	Generates AddAuthentication().AddJwtBearer() in Startup.ConfigureService()
+services-add-mvc	Generates AddMvc() in Startup.ConfigureService()
+services-add-mvc-json-default	Generates AddMvc() with AddJsonOptions() using DefaultContractResolver
+services-add-mvc-json-camel	Generates AddMvc() with AddJsonOptions() using CamelCasePropertyNamesContractResolver
+services-add-mvc-json-converters	Generates AddMvc() with AddJsonOptions() using custom Converters
+services-add-spastaticfiles	Generates AddSpaStaticFiles() in Startup.ConfigureService()
+app-use	Generates app.Use() in Startup.Configure()
+app-run	Generates app.Run() in Startup.Configure()
+app-map	Generates app.Map() in Startup.Configure()
+app-use-spa	Generates UseSpa() in Startup.Configure()
+app-use-staticfiles	Generates app.UseStaticFiles() in Startup.Configure()
+app-use-defaultfiles	Generates app.UseDefaultFiles() in Startup.Configure()
+app-use-directorybrowser	Generates app.UseDirectoryBrowser() in Startup.Configure()
+--------------
+C# (**/*Controller.cs)
+Prefix	Description
+api-controller	Generates API Controller           <=============
+api-action	Generates API Action: GET
+api-action-post	Generates API Action: POST
+api-action-put	Generates API Action: PUT
+api-action-delete	Generates API Action: DELETE
+mvc-controller	Generates MVC Controller
+mvc-action	Generates MVC Action
+api-controller-async	Generates async API Async Controller
+api-action-async	Generates async API Action: GET
+api-action-post-async	Generates async API Action: POST
+api-action-put-async	Generates async API Action: PUT
+api-action-delete-async	Generates async API Action: DELETE
+mvc-controller-async	Generates async MVC Controller
+mvc-action-async	Generates async MVC Async Action
+----------
+C# (**/*Middleware.cs)
+Prefix	Description
+middleware-1	Generates Middleware class by convention
+middleware-2	Generates Middleware class by using IMiddleware
+
+*/
+
+/*
+-------
+C# general snippets
+#helloworld
+~
+cclear
+cgo
+class
+classa
+classd
+const
+cr
+crk
+csproj_1.0
+csproj_1.1
+csproj_2.0
+csproj_2.1
+csproj_3.1
+csproj_5
+cwl
+dowhile
+else
+enum
+exception
+for
+foreach
+guid
+guidn
+if
+ifelse
+iif
+immutable
+interface
+linq_distinct
+linq_where
+lock
+main
+method
+method_async
+msgbox
+mstest
+namespace
+prop
+propi
+propinit
+propr
+pum
+pvm
+record
+singleton
+singletonl
+singletonts
+struct
+switch
+tls
+todo
+try
+tryf
+using
+while
+Visual Studio snippets
+sln_2017
+sln_2019
+ASP.NET Core C# snippets
+ac_#helloworld_Startup
+ac_#helloworld_WebApp
+ac_#helloworld_WebApi
+ac_action
+ac_comment
+ac_conf
+ac_conf_file
+ac_controller
+ac_csproj_2.0
+ac_csproj_2.1
+ac_csproj_3.1
+ac_csproj_5
+ac_startupenv
+ASP.NET Core Web Api C# snippets
+api_controller
+api_delete
+api_get
+api_put
+api_post
+.NET Extensions
+ex_md5_from_stream
+ex_stream_to_string
+ex_string_to_stream
+gRPC C# snippets (.NET 5)
+gRPC_client_csproj
+gRPC_client_program
+gRPC_proto
+gRPC_server_csproj
+gRPC_server_program
+gRPC_server_service
+gRPC_server_settings
+gRPC_server_startup
+
+### ASP.NET Core Razor C# snippets
+```csharp
+rz_code
+rz_comment
+rz_directive
+rz_dowhile
+rz_for
+rz_foreach
+rz_functions
+rz_if
+rz_ifelse
+rz_implements
+rz_inherits
+rz_inject
+rz_model
+rz_namespace
+rz_raw
+rz_renderbody
+rz_switch
+rz_try
+rz_using
+rz_viewbag
+rz_viewdata
+rz_while
+XML Comments snippets
+xml_<c>
+xml_<code>
+xml_<example>
+xml_<exception>
+xml_<include>
+xml_<list>
+xml_<para>
+xml_<param>
+xml_<paramref>
+xml_<permission>
+xml_<remarks>
+xml_<returns>
+xml_<see>
+xml_<seealso>
+xml_<summary>
+xml_<typeparam>
+xml_<typeparamref>
+xml_<value>
+*/
